@@ -11,7 +11,11 @@ class App extends Component{
         this.state = { 
             print_top: false,
             print_create: false,
-            url: ''
+
+            url: '',
+            errors: {
+                url: 'Campo obligatorio'
+            }
         };
         
         this.handleShow = this.handleShow.bind(this);
@@ -23,10 +27,12 @@ class App extends Component{
         e.preventDefault();
         this.setState({ print_top: true})
         
-        if(this.state.print_create === true) {
+        if( this.handleInput === true) {
             this.setState({ print_create: false })
             window.location.reload()
         }
+
+
     }
     
     handleCreate(e) {
@@ -50,13 +56,24 @@ class App extends Component{
             this.setState({ print_top: false})
             window.location.reload()
         }
+        
+
+        
     }
     
     handleInput(e) {
+
         this.setState({ url: e.target.value })
+            
+
     }
+
+
+
+    
     
     render() {
+       
         return (
             // begin body view react
             <div className="App">
@@ -64,23 +81,24 @@ class App extends Component{
                 <header className="header" id="header">   
                     <br /> 
                                  
-                    <h1 class="bg-info text-white"> &nbsp; Shortener Url</h1>
+                    <h1 className="bg-info text-white"> &nbsp; Shortener Url</h1>
                 </header>
 
                 <center>
                 <form id="signup-form" method="post" action="#">
                     <br /> 
                     <div className="img-url">   
-                    <img class="card-img-top" src="https://cdn.iconscout.com/icon/free/png-256/url-9-437256.png"/> 
+                    <img className="card-img-top" src="https://cdn.iconscout.com/icon/free/png-256/url-9-437256.png"/> 
                     
                     </div>
 
 
                     <div className="form-url">
-                    <input className="form-control" type="url" name="url" id="url" placeholder="Enter your URL"  onChange={ this.handleInput }/>
+                    <input className="form-control" pattern="https://.*"  type="url" name="url" id="url" placeholder="Enter your URL"  onChange={ this.handleInput }/>
+                    
                     </div>
                     <div className="refresh">
-                    <input className="btn btn-info" type="submit" value="Refresh" onclick="location.href='http://localhost:3000/"/>
+                    <input className="btn btn-info" type="submit" value="Refresh" onclick=""/>
                     </div>
                     <br />
                     <br />
@@ -114,4 +132,4 @@ class App extends Component{
 }
 
 export default App;
-//
+
