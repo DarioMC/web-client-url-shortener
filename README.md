@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### WEB Client For URL Shortened
 
-* ULR Shortener API: [link](https://web-client-url-shortener.herokuapp.com/)
+* Web Client: [link](https://web-client-url-shortener.herokuapp.com/)
 
 
 ### API 
