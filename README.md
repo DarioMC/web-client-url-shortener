@@ -1,5 +1,33 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+### WEB Client For URL Shortened
+
+* ULR Shortener API: [link](https://web-client-url-shortener.herokuapp.com/)
+
+
+### API 
+
+* ULR Shortener API: [link](https://urlshortened.herokuapp.com/)
+
+
+### API URL Shortened Source Code 
+
+[link](https://github.com/DarioMC/URL-shortener)
+
+
+## Future improvements
+
+- [ ] Improve the interface specifically when displaying the new shortened URL,
+since you must reload the page and enter an invalid data to show the recently shortened url.
+
+
+
+
+
+https://urlshortened.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +94,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
