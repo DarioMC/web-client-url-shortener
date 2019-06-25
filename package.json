@@ -1,7 +1,11 @@
 {
-  "name": "full-stack-challenge",
+  "name": "web-client-url-shortener",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
