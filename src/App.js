@@ -22,7 +22,26 @@ class App extends Component{
         this.handleShow = this.handleShow.bind(this);
         this.handleCreate = this.handleCreate.bind(this);
         this.handleInput = this.handleInput.bind(this);
+        this.handleUpdate= this.handleUpdate.bind(this);
+        this.handleHelp= this.handleHelp.bind(this);
+        
     }
+
+    handleUpdate(e) {
+        if(this.handleUpdate){
+                this.setState({ print_create: true })
+                //window.location.reload()
+            }
+
+        }
+    
+    handleHelp(e) {
+        if(this.handleHelp){
+            alert('1:Enter a valid URL, 2: Press Shorter, 3: Press Update, 4:Press Shorter again')
+            }
+            e.preventDefault();
+
+        }
     
     handleShow(e) {
         e.preventDefault();
@@ -89,6 +108,21 @@ class App extends Component{
                 </header>
 
                 <center>
+                <form id="signup-form">
+                <div className="refresh">
+                    <input className="btn btn-info" 
+                    type="submit" 
+                    value="Update" 
+                    onClick={this.handleUpdate}/>
+                    </div>
+                    <div className="help">
+                    <input className="btn btn-info" 
+                    type="submit" 
+                    value="Help" 
+                    onClick={this.handleHelp}/>
+                    </div>
+
+                </form>
                 <form id="signup-form" method="post" >
                     <br /> 
                     <div className="img-url">   
@@ -112,7 +146,7 @@ class App extends Component{
                     <br />
                     <input className="btn btn-info" 
                             type="submit" 
-                            value="Shorted" 
+                            value="Shorter" 
                             onClick={ this.handleCreate }/>
                     &nbsp; &nbsp;
                     <input className="btn btn-info" 
@@ -129,7 +163,7 @@ class App extends Component{
                 <Create print_create={ this.state.print_create } />
 
                 <footer>
-                <br /> <br /> <br /> <br /> <br /> <br />  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+                    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
                         <div className="footer">
                         <br />
                         <br />

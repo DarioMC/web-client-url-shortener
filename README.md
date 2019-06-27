@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Future improvements
 
-- [ ] Improve the interface specifically when displaying the new shortened URL, then of inputting the valid URL, must be reload the page and select the "Shortened" button again.
+- [ ] Improve the interface specifically when displaying the new shortened URL, then of inputting the valid URL, must be press "Update" and select the "Shorter" button again.
 
 
 

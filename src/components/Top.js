@@ -58,11 +58,6 @@ class Top extends Component {
                                     </p>
                                     <br/>
                                     </center>
-                                    <div className="num-url">
-                                    <h5>Total Shortened URLs</h5>
-                                    <span className="bagge bagge-pill badge-light ml-2" >
-                                    {this.state.tops.length}</span>
-                                    </div>
                                     <br /> 
                                 </header>
                                 
